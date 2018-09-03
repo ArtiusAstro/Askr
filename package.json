@@ -1,7 +1,7 @@
 {
-  "name": "websocket-chat",
+  "name": "askr",
   "version": "0.0.0",
-  "description": "Example group chat app built with socket.io and react.",
+  "description": "group chat app built with socket.io and react.",
   "scripts": {
     "server": "node ./server/server.js",
     "client": "webpack-dev-server",
@@ -14,7 +14,7 @@
     "react",
     "reactjs"
   ],
-  "author": "justadudewhohacks",
+  "author": "astro",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
