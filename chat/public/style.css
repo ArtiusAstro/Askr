@@ -11,11 +11,11 @@ html {
 
 html, input {
   font-family:
-    Consolas
+    Consolas,
     Arial,
     sans-serif;
   color:
-    green;
+    black;
 }
 
 html, body {
