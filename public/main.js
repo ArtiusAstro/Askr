@@ -11,7 +11,7 @@ $(function() {
   var $window = $(window);
   var $usernameInput = $('.usernameInput'); // Input for username
   var $messages = $('.messages'); // Messages area
-  var $inputMessage = $('.inputMessage'); // Input message input box
+  var $inputMessage = $('.inputMessage'); // Input for message
 
   var $loginPage = $('.login.page'); // The login page
   var $chatPage = $('.chat.page'); // The chatroom page
@@ -168,7 +168,7 @@ $(function() {
       }, TYPING_TIMER_LENGTH);
     }
   }
-
+  
   // Gets the 'X is typing' messages of a user
   const getTypingMessages = (data) => {
     return $('.typing.message').filter(function (i) {
