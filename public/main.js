@@ -10,6 +10,10 @@ $(function() {
   // Initialize variables
   var $window = $(window);
   var $usernameInput = $('.usernameInput'); // Input for username
+  //var $password1Input = $('#password1Input'); // Input for password 1
+  //var $password2Input = $('#password2Input'); // Input for password 2
+  //var $password3Input = $('#password3Input'); // Input for password 3
+  //var $loginFormSubmit = $('.loginFormSubmit'); // Submit for login form
   var $messages = $('.messages'); // Messages area
   var $inputMessage = $('.inputMessage'); // Input for message
 
@@ -18,6 +22,9 @@ $(function() {
 
   // Prompt for setting a username
   var username;
+  var password1 = "alfonse";
+  var password2 = "anna";
+  var password3 = "sharena";
   var connected = false;
   var typing = false;
   var lastTypingTime;
@@ -35,6 +42,16 @@ $(function() {
     log(message);
   }
 
+  function strcmp(a, b){
+    return (a<b?-1:(a>b?1:0));
+  }
+
+  function passwordCheck(){
+    if(strcmp(cleanInput($password1Input.val().trim()),password1)  return false;
+    if(strcmp(cleanInput($password2Input.val().trim()),password2)  return false;
+    if(strcmp(cleanInput($password3Input.val().trim()),password3)  return false;
+    return true;
+  }
   // Sets the client's username
   const setUsername = () => {
     username = cleanInput($usernameInput.val().trim());
@@ -168,7 +185,7 @@ $(function() {
       }, TYPING_TIMER_LENGTH);
     }
   }
-  
+
   // Gets the 'X is typing' messages of a user
   const getTypingMessages = (data) => {
     return $('.typing.message').filter(function (i) {

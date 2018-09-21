@@ -11,11 +11,10 @@ html {
 
 html, input {
   font-family:
-    Consolas,
     Arial,
     sans-serif;
   color:
-    black;
+    #1f3;
 }
 
 html, body {
@@ -44,19 +43,18 @@ ul {
   width: 100%;
 }
 
-/* Login Page */
+/* login section */
 
 .login.page {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .login.page .form {
   height: 100px;
-  margin-top: -100px;
+  margin-top: 50px;
   position: absolute;
-
   text-align: center;
-  top: 50%;
+  top: 25%;
   width: 100%;
 }
 
@@ -70,8 +68,33 @@ ul {
   width: 400px;
 }
 
+.passwordInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  margin: 30px;
+  margin-top: 0px;
+  text-align: center;
+  width: 400px;
+}
+
+.loginFormSubmit {
+    background-color: #2C9F30; /* Green */
+    border: none;
+    color: #eee;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
 .login.page .title {
   font-size: 200%;
+  color: #fff
 }
 
 .login.page .usernameInput {
@@ -79,12 +102,16 @@ ul {
   letter-spacing: 3px;
 }
 
-.login.page .title, .login.page .usernameInput {
-  color: #000;
+.passwordInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title, .login.page .usernameInput .passwordInput{
   font-weight: 100;
 }
 
-/* Chat page */
+/* chat section */
 
 .chat.page {
   display: none;
@@ -107,7 +134,7 @@ ul {
   text-align: center;
 }
 
-/* Messages */
+/* messages section */
 
 .chatArea {
   height: 100%;
@@ -132,10 +159,17 @@ ul {
   text-align: right;
 }
 
-/* Input */
+.password {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+/* input section */
 
 .inputMessage {
-  border: 10px solid #000;
+  border: 10px solid #fff;
   bottom: 0;
   height: 60px;
   left: 0;
