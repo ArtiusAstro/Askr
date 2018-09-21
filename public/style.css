@@ -115,6 +115,7 @@ ul {
 
 .chat.page {
   display: none;
+  color: black;
 }
 
 /* Font */
@@ -169,7 +170,7 @@ ul {
 /* input section */
 
 .inputMessage {
-  border: 10px solid #fff;
+  border: 10px solid #000;
   bottom: 0;
   height: 60px;
   left: 0;
@@ -178,4 +179,5 @@ ul {
   position: absolute;
   right: 0;
   width: 100%;
+  color: black
 }
