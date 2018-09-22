@@ -7,8 +7,6 @@ Socket.IO enables real-time bidirectional event-based communication. Askr uses t
 - a Node.js server (this repository)
 - a [Javascript client library](https://github.com/socketio/socket.io-client) for the browser (or a Node.js client)
 
-Features include:
-
 #### Reliability
 
 Connections are established even in the presence of:
