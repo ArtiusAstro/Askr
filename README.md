@@ -1,4 +1,5 @@
 # Askr
+Available on root
 
 ## Features
 
